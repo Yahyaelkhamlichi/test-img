@@ -16,6 +16,11 @@ let data = await response.json()
 console.log(data)
 
 // img data 
+
+if(page === 1){
+   nn.innerHTML=""
+}
+  
 resultsb = data.results
 resultsb.map((resultbox) =>{
    var img = document.createElement("img")
